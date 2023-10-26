@@ -163,6 +163,8 @@ export default {
 |**space**|`Number`|`200`|To add space between items in a vue-marquee-slider, you can use the space prop. The space prop allows you to specify the amount of space in pixels between each item in the slider.
 |**speed**|`Number`|`1500`|The speed prop in vue-marquee-slider allows users to set the speed at which the content in the slider will move. This can be set in miliseconds, allowing for precise control over the speed. The default value is 1500 ms, but this can be increased or decreased as needed.
 |**width**|`Number`|`100`|The width prop of each item in the vue-marquee-slider determines the width of the individual items within the slider. This prop can be useful for creating a consistent look and feel for the items in the slider, and for ensuring that they all fit within the designated space of the slider.
+|**height**|`Number`|`100`|Only use vertical mode.
+|**vertical**|`Boolean`|`false`|Vertical mode.
 
 
 ## Examples
