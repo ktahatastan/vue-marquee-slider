@@ -165,6 +165,7 @@ export default {
 |**width**|`Number`|`100`|The width prop of each item in the vue-marquee-slider determines the width of the individual items within the slider. This prop can be useful for creating a consistent look and feel for the items in the slider, and for ensuring that they all fit within the designated space of the slider.
 |**height**|`Number`|`100`|Only use vertical mode.
 |**vertical**|`Boolean`|`false`|Vertical mode.
+|**hover**|`Boolean`|`false`|Pause animation on mouse state.
 
 
 ## Examples

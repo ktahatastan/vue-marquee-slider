@@ -16,6 +16,12 @@ export default {
               return "id";
           },
       },
+      hover: {
+          type: Boolean,
+          default: () => {
+              return false; 
+          },
+      },
       vertical: {
           type: Boolean,
           default: () => {
@@ -98,11 +104,10 @@ export default {
       `;
     },
     addClass() {
-      if (this.vertical) {
-          return "vertical-anim"
-      } else {
-          return "horizontal-anim"
-      }
+      return `
+          ${this.vertical ? "vertical-anim" : "horizontal-anim" + ' '}
+          ${this.hover ? "hover-stop" : " "}
+      `;
     },
   },
   mounted() {
@@ -234,6 +239,9 @@ export default {
   animation-name: animation-y;
 }
 
+.hover-stop:hover {
+  animation-play-state: paused !important;
+}
 
 @keyframes animation-x {
   0% {
